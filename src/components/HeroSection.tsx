@@ -26,11 +26,12 @@ const HeroSection = () => {
   const sectionStyle: React.CSSProperties = {
     backgroundImage: `url(${heroImage})`,
 
-    backgroundSize: "contain",
-    backgroundPosition: "top center",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
     backgroundColor: "#fff", // to fill white around image
 
     backgroundRepeat: "no-repeat",
+    width: "100vw",
 
     height: viewport === "mobile" ? "55vh" :
     viewport === "tablet" ? "75vh" : "100vh",
@@ -80,15 +81,23 @@ const HeroSection = () => {
         };
 
   return (
-    <section
-      className="relative flex items-center bg-white"
-      style={{ minHeight: viewport === "mobile" ? "500px" : "900px" }}
-    >
+<section
+  className="relative flex items-center bg-white"
+  style={{
+    height:
+      viewport === "mobile"
+        ? "60vh"
+        : viewport === "tablet"
+        ? "80vh"
+        : "100vh",
+  }}
+>
+
       <div className="absolute inset-0" style={sectionStyle}>
         <div className="absolute inset-0 bg-black/10"></div>
       </div>      
 
-      <div className="absolute top-1/2 right-6 sm:right-12 lg:right-24 transform -translate-y-1/2 z-20">
+      {/* <div className="absolute top-1/2 right-6 sm:right-12 lg:right-24 transform -translate-y-1/2 z-20">
         <div className="relative bg-white/70 backdrop-blur-md px-6 py-4 sm:px-10 sm:py-8 lg:px-16 lg:py-12 text-center max-w-[90vw] sm:max-w-xl rounded-xl">
           <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
 
@@ -102,7 +111,7 @@ const HeroSection = () => {
     lg:text-5xl 
     text-gray-900 
     leading-tight
-  "
+  "S
 >
   Welcome to <br className="hidden sm:block" />
   <span className="text-[#b0004c]">REACH</span> Furniture Studio!
@@ -112,7 +121,7 @@ const HeroSection = () => {
 </div>
 
         </div>
-      </div>
+      </div> */}
 
       <div style={buttonContainerStyle}>
       </div>
