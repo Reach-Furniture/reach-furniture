@@ -3,6 +3,11 @@ import heroImage from "@/assets/heroimage.png";
 const HeroSection = () => {
   return (
     <section className="w-full bg-white">
+      {/* Hidden H1 for SEO */}
+      <h1 className="sr-only">
+        REACH Furniture Studio – Furniture Design Software for Manufacturers and Designers
+      </h1>
+
       {/* Hero Wrapper */}
       <div
         className="
@@ -33,4 +38,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
