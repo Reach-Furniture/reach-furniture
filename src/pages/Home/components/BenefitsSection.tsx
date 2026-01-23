@@ -46,13 +46,13 @@ const BenefitsSection = () => {
         
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {benefits.map((benefit, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div key={index} className="bg-gray-100 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-start space-x-4">
-                <div className="bg-primary/10 p-3 rounded-lg flex-shrink-0">
-                  <benefit.icon className="w-8 h-8 text-primary" />
+                <div className="bg-f8b8d1 p-3 rounded-lg flex-shrink-0">
+                  <benefit.icon className="w-8 h-8 text-black" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-primary mb-3">{benefit.title}</h3>
+                  <h3 className="text-xl font-bold text-ea6aad mb-3">{benefit.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
                 </div>
               </div>
