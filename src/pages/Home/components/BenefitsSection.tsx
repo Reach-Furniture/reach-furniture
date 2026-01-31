@@ -41,7 +41,7 @@ const BenefitsSection = () => {
           Benefits of REACH Furniture Studio
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          REACH Footwear Studio
+          Best In Class Furniture Studio Software
         </p>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">

@@ -31,7 +31,7 @@ const Footer = () => {
               <span className="text-primary">REACH</span> Furniture Studio
             </Link>
             <p className="text-gray-300 max-w-md">
-              The REACH Furniture Studio
+              Best In Class Furniture Studio Software
             </p>
 
 
